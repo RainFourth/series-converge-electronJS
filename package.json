@@ -1,0 +1,14 @@
+{
+  "name": "lab-2-series-converge-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "rRain",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.0"
+  }
+}

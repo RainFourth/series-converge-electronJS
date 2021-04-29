@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Сходимость ряда</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="canvas-container">
+            <canvas></canvas>
+        </div>
+        <div class="settings-container">
+            <div>
+                <div><label for="n-threads">Number of threads [1-32]</label></div>
+                <input type="text" id="n-threads"/>
+                <!--<div class="btn-container">
+                    <button>PREVIOUS</button>
+                    <button>DEFAULT</button>
+                    <button>APPLY</button>
+                </div>-->
+            </div>
+            <div>
+                <div><label for="calc-depth">Calculation depth</label></div>
+                <div><label for="calc-depth">[1-1'000'000]</label></div>
+                <input type="text" id="calc-depth"/>
+                <div class="btn-container">
+                    <button id="stop-calc">Stop Calculations & Reset</button>
+                    <!--<button>PREVIOUS</button>
+                    <button id="calc-default">DEFAULT</button>
+                    <button id="calc-apply">APPLY</button>-->
+                </div>
+            </div>
+            <div>
+                <div><label for="theme-select">Theme</label></div>
+                <div class="btn-container"><select id="theme-select"></select></div>
+            </div>
+            <div class="space"></div>
+            <div>
+                <label>WheelUp/Down => Zoom</label>
+            </div>
+            <div>
+                <label>Shift+WheelUp/Down => More Zoom</label>
+            </div>
+            <div>
+                <label>Alt+WheelUp/Down => Change Depth</label>
+            </div>
+            <div>
+                <label>Alt+Shift+WheelUp/Down => More Change Depth</label>
+            </div>
+            <div>
+                <label>Hold Wheel & Drag => Drag Graph</label>
+            </div>
+        </div>
+
+    </div>
+
+    <!--todo display ZOOM STATUS-->
+
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/themeManager.js"></script>
+    <script src="scripts/cacheManager.js"></script>
+    <script src="scripts/workerManager.js"></script>
+    <script src="scripts/painter2.js"></script>
+    <script src="scripts/main2.js"></script>
+
+</body>
+</html>

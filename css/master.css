@@ -1,0 +1,70 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  /* теперь width/height будут считаться без паддингов и бордеров - т.е. тлько от доступного пространства*/
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-container {
+  flex-grow: 1;
+  height: 100%;
+}
+.canvas-container canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  padding: 4px 8px;
+  background-color: #3c3f41;
+}
+.settings-container :nth-child(n) {
+  /*foreach child (в аргумент n передаются номера детей)*/
+  margin: 4px 0;
+}
+.settings-container input[type=text] {
+  width: 100%;
+}
+.settings-container label {
+  color: #bbbbbb;
+}
+
+.btn-container {
+  display: flex;
+  margin: 8px -4px;
+}
+.btn-container button, .btn-container select {
+  flex-grow: 1;
+  margin: 0 4px;
+  padding: 4px 0;
+  font-size: 8pt;
+}
+
+.space {
+  width: 0;
+  height: 0;
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=master.css.map */
